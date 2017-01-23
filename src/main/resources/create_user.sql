@@ -1,0 +1,24 @@
+CREATE USER boot IDENTIFIED BY boot;
+
+GRANT
+CREATE USER,
+DROP USER,
+ALTER USER,
+CREATE ANY VIEW,
+DROP ANY VIEW,
+EXP_FULL_DATABASE,
+IMP_FULL_DATABASE,
+DBA,
+CONNECT,
+RESOURCE,
+CREATE SESSION
+TO boot;
+
+DROP USER boot;
+
+
+SELECT *
+FROM product_component_version;
+
+
+select * from boot."person";
